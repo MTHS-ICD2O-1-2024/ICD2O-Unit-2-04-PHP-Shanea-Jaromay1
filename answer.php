@@ -3,9 +3,9 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="description" content="Area and Perimeter of Rectangle, in PHP" />
+  <meta name="description" content="Area of Triangle, in PHP" />
   <meta name="keywords" content="mths, icd2o" />
-  <meta name="author" content="Mr. Coxall" />
+  <meta name="author" content="Shanea Jaromay" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
@@ -32,20 +32,18 @@
       <div class="page-content-php">
         <div id="user-info">
           <?php
-          $lengthOfRectangle = $_GET["length-of-rectangle"];
-          $widthOfRectangle = $_GET["width-of-rectangle"];
+          $baseOfTriangle = $_GET["base-of-triangle"];
+          $heightOfTriangle = $_GET["height-of-triangle"];
 
           // process
-          $area = $lengthOfRectangle * $widthOfRectangle;
-          $perimeter = 2 * ($lengthOfRectangle + $widthOfRectangle);
+          $area = ($baseOfTriangle * $heightOfTriangle) / 2;
 
           // output
-          echo "If a rectangle has length = " . $lengthOfRectangle . " cm and the width = " . $widthOfRectangle . " cm:";
+          echo "If a triangle has base = " . $baseOfTriangle . " cm and the height = " . $heightOfTriangle . " cm:";
           echo "<br />";
           echo "<br />";
-          echo "The area of the rectangle is " . $area . " cm².";
+          echo "The area of the triangle is " . $area . " cm².";
           echo "<br />";
-          echo "The perimeter of the rectangle is " . $perimeter . " cm.";
           ?>
         </div>
       </div>

@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="description" content="Area and Perimeter of Rectangle, in PHP" />
+  <meta name="description" content="Area of Triangle, in PHP" />
   <meta name="keywords" content="mths, icd2o" />
   <meta name="author" content="Shanea Jaromay" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -34,14 +34,14 @@
       <div class="page-content-php">
         <form action="answer.php" method="GET">
           <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type=" text" pattern="-?[0-9]*(\.[0-9]+)?" name="length-of-rectangle">
-            <label class="mdl-textfield__label" for="length-of-rectangle">Length of retangle (cm)</label>
+            <input class="mdl-textfield__input" type=" text" pattern="-?[0-9]*(\.[0-9]+)?" name="base-of-triangle">
+            <label class="mdl-textfield__label" for="base-of-triangle">Base of Triangle (cm)</label>
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
           <br />
           <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type=" text" pattern="-?[0-9]*(\.[0-9]+)?" name="width-of-rectangle">
-            <label class="mdl-textfield__label" for="width-of-rectangle">Width of rectangle (cm)</label>
+            <input class="mdl-textfield__input" type=" text" pattern="-?[0-9]*(\.[0-9]+)?" name="height-of-triangle">
+            <label class="mdl-textfield__label" for="height-of-triangle">Height of Triangle (cm)</label>
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
           <br />
