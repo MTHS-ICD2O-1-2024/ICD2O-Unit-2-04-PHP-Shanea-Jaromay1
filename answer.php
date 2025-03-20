@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta name="description" content="Area and Perimeter of Rectangle, in PHP" />
   <meta name="keywords" content="mths, icd2o" />
-  <meta name="author" content="Shanea Jaromay" />
+  <meta name="author" content="Mr. Coxall" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
@@ -29,28 +29,25 @@
       <div class="right-image">
         <img src="./images/area_of_trinagle.png" alt="area of triangle" width="250" />
       </div>
-      <br />
-      <div class="page-content">Enter the base and height in cm.</div>
       <div class="page-content-php">
-        <form action="answer.php" method="GET">
-          <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type=" text" pattern="-?[0-9]*(\.[0-9]+)?" name="length-of-rectangle">
-            <label class="mdl-textfield__label" for="length-of-rectangle">Length of retangle (cm)</label>
-            <span class="mdl-textfield__error">Input is not a number!</span>
-          </div>
-          <br />
-          <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type=" text" pattern="-?[0-9]*(\.[0-9]+)?" name="width-of-rectangle">
-            <label class="mdl-textfield__label" for="width-of-rectangle">Width of rectangle (cm)</label>
-            <span class="mdl-textfield__error">Input is not a number!</span>
-          </div>
-          <br />
-          <!-- Accent-colored raised button with ripple -->
-          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-            type="submit">
-            Calculate
-          </button>
-        </form>
+        <div id="user-info">
+          <?php
+          $lengthOfRectangle = $_GET["length-of-rectangle"];
+          $widthOfRectangle = $_GET["width-of-rectangle"];
+
+          // process
+          $area = $lengthOfRectangle * $widthOfRectangle;
+          $perimeter = 2 * ($lengthOfRectangle + $widthOfRectangle);
+
+          // output
+          echo "If a rectangle has length = " . $lengthOfRectangle . " cm and the width = " . $widthOfRectangle . " cm:";
+          echo "<br />";
+          echo "<br />";
+          echo "The area of the rectangle is " . $area . " cm².";
+          echo "<br />";
+          echo "The perimeter of the rectangle is " . $perimeter . " cm.";
+          ?>
+        </div>
       </div>
     </main>
   </div>
